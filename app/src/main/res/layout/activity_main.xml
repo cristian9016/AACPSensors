@@ -6,18 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/sensorList"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:text="Lista de Sensores" />
+    <TextView
+        android:id="@+id/labelLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/luz_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </ScrollView>
-
-
+    <TextView
+        android:id="@+id/labelProximidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/proximidad_label"
+        app:layout_constraintStart_toStartOf="@+id/labelLuz"
+        app:layout_constraintTop_toBottomOf="@+id/labelLuz" />
 </android.support.constraint.ConstraintLayout>

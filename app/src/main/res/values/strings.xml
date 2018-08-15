@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SensorListSample</string>
+    <string name="luz_label">Sensor de Luz: %1$.2f</string>
+    <string name="proximidad_label">Sensor de Proximidad: %1$.2f</string>
 </resources>
